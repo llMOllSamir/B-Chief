@@ -6,4 +6,7 @@
   #root {
     @apply min-w-full min-h-screen bg-gradient-to-tr from-white text-black  to-gray-600 flex flex-col justify-between items-center;
   }
+  body {
+    scroll-behavior: smooth;
+  }
 }

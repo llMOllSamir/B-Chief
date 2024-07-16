@@ -1,0 +1,30 @@
+.header {
+  @apply fixed z-50 inset-0  h-20 
+        flex justify-between   items-center px-4  md:px-10 lg:px-16 gap-10;
+}
+.header.move {
+  @apply bg-gradient-to-tr  from-white   to-gray-600 shadow-xl shadow-gray-600 transition-all duration-1000;
+}
+.home {
+  background-image: url("./images/portrait-modern-man-cleaning-doing-household-chores.jpg") !important;
+  background-repeat: no-repeat;
+  animation: move 30s alternate infinite;
+  background-size: cover;
+  @apply w-full -mt-20 pt-20 min-h-[70vh] grid grid-cols-1 justify-center items-center lg:grid-cols-2;
+}
+
+@keyframes move {
+  0% {
+    background-position: 50% 10%;
+  }
+  50% {
+    background-position: 50% 60%;
+  }
+  100% {
+    background-position: 50% 30%;
+  }
+}
+
+a.active {
+  @apply md:bg-sky-800;
+}
